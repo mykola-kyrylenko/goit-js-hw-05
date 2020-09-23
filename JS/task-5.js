@@ -26,14 +26,7 @@ class Car {
         Пробег: ${car.distance}
         Цена: ${car.price} $`);
   }
-  constructor({
-    name = "car",
-    speed = 0,
-    price = 0,
-    maxSpeed = 0,
-    isOn = false,
-    distance = 0,
-  }) {
+  constructor({ maxSpeed, speed = 0, isOn = false, distance = 0, price }) {
     this.name = name;
     this._speed = speed;
     this._price = price;
