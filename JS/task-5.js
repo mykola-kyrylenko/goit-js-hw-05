@@ -19,7 +19,6 @@ class Car {
    */
   static getSpecs(car) {
     console.log(`
-        Авто: ${car.name}
         Макс. скорость: ${car.maxSpeed} км/час
         Текущая скорость: ${car.speed}
         Двигатель вкл/выкл: ${car.isOn}
@@ -27,7 +26,6 @@ class Car {
         Цена: ${car.price} $`);
   }
   constructor({ maxSpeed, price }) {
-    this.name = name;
     this._speed = 0;
     this._price = price;
     this.maxSpeed = maxSpeed;
